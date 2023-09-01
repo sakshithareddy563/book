@@ -1,0 +1,3 @@
+/home/sakshitha/Desktop/cppfiles/CMakeFiles/edit_cache.dir
+/home/sakshitha/Desktop/cppfiles/CMakeFiles/rebuild_cache.dir
+/home/sakshitha/Desktop/cppfiles/CMakeFiles/book_example.dir
