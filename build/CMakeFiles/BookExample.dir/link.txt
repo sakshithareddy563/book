@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/BookExample.dir/main.cpp.o  -o BookExample  libbooks.a 

@@ -3,6 +3,9 @@ project(BookExample)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(book_example main.cpp book.cpp)
+include_directories(.)
 
-target_include_directories(book_example PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
+add_library(books STATIC book.cpp)
+
+add_executable(${PROJECT_NAME} main.cpp)
+target_link_libraries(${PROJECT_NAME} books)

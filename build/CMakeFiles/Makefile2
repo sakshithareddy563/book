@@ -53,7 +53,8 @@ CMAKE_BINARY_DIR = /home/sakshitha/Desktop/cppfiles/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/book_example.dir/all
+all: CMakeFiles/BookExample.dir/all
+all: CMakeFiles/books.dir/all
 
 .PHONY : all
 
@@ -63,36 +64,64 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/book_example.dir/clean
+clean: CMakeFiles/BookExample.dir/clean
+clean: CMakeFiles/books.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/book_example.dir
+# Target rules for target CMakeFiles/BookExample.dir
 
 # All Build rule for target.
-CMakeFiles/book_example.dir/all:
-	$(MAKE) -f CMakeFiles/book_example.dir/build.make CMakeFiles/book_example.dir/depend
-	$(MAKE) -f CMakeFiles/book_example.dir/build.make CMakeFiles/book_example.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sakshitha/Desktop/cppfiles/build/CMakeFiles --progress-num=1,2,3 "Built target book_example"
-.PHONY : CMakeFiles/book_example.dir/all
+CMakeFiles/BookExample.dir/all: CMakeFiles/books.dir/all
+	$(MAKE) -f CMakeFiles/BookExample.dir/build.make CMakeFiles/BookExample.dir/depend
+	$(MAKE) -f CMakeFiles/BookExample.dir/build.make CMakeFiles/BookExample.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sakshitha/Desktop/cppfiles/build/CMakeFiles --progress-num=1,2 "Built target BookExample"
+.PHONY : CMakeFiles/BookExample.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/book_example.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sakshitha/Desktop/cppfiles/build/CMakeFiles 3
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/book_example.dir/all
+CMakeFiles/BookExample.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sakshitha/Desktop/cppfiles/build/CMakeFiles 4
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/BookExample.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/sakshitha/Desktop/cppfiles/build/CMakeFiles 0
-.PHONY : CMakeFiles/book_example.dir/rule
+.PHONY : CMakeFiles/BookExample.dir/rule
 
 # Convenience name for target.
-book_example: CMakeFiles/book_example.dir/rule
+BookExample: CMakeFiles/BookExample.dir/rule
 
-.PHONY : book_example
+.PHONY : BookExample
 
 # clean rule for target.
-CMakeFiles/book_example.dir/clean:
-	$(MAKE) -f CMakeFiles/book_example.dir/build.make CMakeFiles/book_example.dir/clean
-.PHONY : CMakeFiles/book_example.dir/clean
+CMakeFiles/BookExample.dir/clean:
+	$(MAKE) -f CMakeFiles/BookExample.dir/build.make CMakeFiles/BookExample.dir/clean
+.PHONY : CMakeFiles/BookExample.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/books.dir
+
+# All Build rule for target.
+CMakeFiles/books.dir/all:
+	$(MAKE) -f CMakeFiles/books.dir/build.make CMakeFiles/books.dir/depend
+	$(MAKE) -f CMakeFiles/books.dir/build.make CMakeFiles/books.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sakshitha/Desktop/cppfiles/build/CMakeFiles --progress-num=3,4 "Built target books"
+.PHONY : CMakeFiles/books.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/books.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sakshitha/Desktop/cppfiles/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/books.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sakshitha/Desktop/cppfiles/build/CMakeFiles 0
+.PHONY : CMakeFiles/books.dir/rule
+
+# Convenience name for target.
+books: CMakeFiles/books.dir/rule
+
+.PHONY : books
+
+# clean rule for target.
+CMakeFiles/books.dir/clean:
+	$(MAKE) -f CMakeFiles/books.dir/build.make CMakeFiles/books.dir/clean
+.PHONY : CMakeFiles/books.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

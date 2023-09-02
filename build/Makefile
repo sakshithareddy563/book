@@ -56,17 +56,6 @@ CMAKE_BINARY_DIR = /home/sakshitha/Desktop/cppfiles/build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -77,6 +66,17 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -111,17 +111,30 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named book_example
+# Target rules for targets named BookExample
 
 # Build rule for target.
-book_example: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 book_example
-.PHONY : book_example
+BookExample: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 BookExample
+.PHONY : BookExample
 
 # fast build rule for target.
-book_example/fast:
-	$(MAKE) -f CMakeFiles/book_example.dir/build.make CMakeFiles/book_example.dir/build
-.PHONY : book_example/fast
+BookExample/fast:
+	$(MAKE) -f CMakeFiles/BookExample.dir/build.make CMakeFiles/BookExample.dir/build
+.PHONY : BookExample/fast
+
+#=============================================================================
+# Target rules for targets named books
+
+# Build rule for target.
+books: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 books
+.PHONY : books
+
+# fast build rule for target.
+books/fast:
+	$(MAKE) -f CMakeFiles/books.dir/build.make CMakeFiles/books.dir/build
+.PHONY : books/fast
 
 book.o: book.cpp.o
 
@@ -129,7 +142,7 @@ book.o: book.cpp.o
 
 # target to build an object file
 book.cpp.o:
-	$(MAKE) -f CMakeFiles/book_example.dir/build.make CMakeFiles/book_example.dir/book.cpp.o
+	$(MAKE) -f CMakeFiles/books.dir/build.make CMakeFiles/books.dir/book.cpp.o
 .PHONY : book.cpp.o
 
 book.i: book.cpp.i
@@ -138,7 +151,7 @@ book.i: book.cpp.i
 
 # target to preprocess a source file
 book.cpp.i:
-	$(MAKE) -f CMakeFiles/book_example.dir/build.make CMakeFiles/book_example.dir/book.cpp.i
+	$(MAKE) -f CMakeFiles/books.dir/build.make CMakeFiles/books.dir/book.cpp.i
 .PHONY : book.cpp.i
 
 book.s: book.cpp.s
@@ -147,7 +160,7 @@ book.s: book.cpp.s
 
 # target to generate assembly for a file
 book.cpp.s:
-	$(MAKE) -f CMakeFiles/book_example.dir/build.make CMakeFiles/book_example.dir/book.cpp.s
+	$(MAKE) -f CMakeFiles/books.dir/build.make CMakeFiles/books.dir/book.cpp.s
 .PHONY : book.cpp.s
 
 main.o: main.cpp.o
@@ -156,7 +169,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) -f CMakeFiles/book_example.dir/build.make CMakeFiles/book_example.dir/main.cpp.o
+	$(MAKE) -f CMakeFiles/BookExample.dir/build.make CMakeFiles/BookExample.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -165,7 +178,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) -f CMakeFiles/book_example.dir/build.make CMakeFiles/book_example.dir/main.cpp.i
+	$(MAKE) -f CMakeFiles/BookExample.dir/build.make CMakeFiles/BookExample.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -174,7 +187,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) -f CMakeFiles/book_example.dir/build.make CMakeFiles/book_example.dir/main.cpp.s
+	$(MAKE) -f CMakeFiles/BookExample.dir/build.make CMakeFiles/BookExample.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -183,9 +196,10 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... book_example"
+	@echo "... edit_cache"
+	@echo "... BookExample"
+	@echo "... books"
 	@echo "... book.o"
 	@echo "... book.i"
 	@echo "... book.s"
