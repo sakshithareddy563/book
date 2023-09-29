@@ -1,0 +1,44 @@
+[
+{
+  "directory": "/home/sakshitha/CPPfiles/build",
+  "command": "/usr/bin/clang++  -I/home/sakshitha/CPPfiles/. -I/usr/local/include/mongocxx/v_noabi -I/usr/local/include/bsoncxx/v_noabi -Wall -Wextra -fPIC -fopenmp  -DBOOST_LOG_DYN_LINK -g -std=gnu++17 -o CMakeFiles/books.dir/book.cpp.o -c /home/sakshitha/CPPfiles/book.cpp",
+  "file": "/home/sakshitha/CPPfiles/book.cpp",
+  "output": "CMakeFiles/books.dir/book.cpp.o"
+},
+{
+  "directory": "/home/sakshitha/CPPfiles/build",
+  "command": "/usr/bin/clang++  -I/home/sakshitha/CPPfiles/. -I/usr/local/include/mongocxx/v_noabi -I/usr/local/include/bsoncxx/v_noabi -Wall -Wextra -fPIC -fopenmp  -DBOOST_LOG_DYN_LINK -g -std=gnu++17 -o CMakeFiles/mongo.dir/database.cpp.o -c /home/sakshitha/CPPfiles/database.cpp",
+  "file": "/home/sakshitha/CPPfiles/database.cpp",
+  "output": "CMakeFiles/mongo.dir/database.cpp.o"
+},
+{
+  "directory": "/home/sakshitha/CPPfiles/build",
+  "command": "/usr/bin/clang++  -I/home/sakshitha/CPPfiles/. -I/usr/local/include/mongocxx/v_noabi -I/usr/local/include/bsoncxx/v_noabi -Wall -Wextra -fPIC -fopenmp  -DBOOST_LOG_DYN_LINK -g -std=gnu++17 -o CMakeFiles/menu.dir/menu.cpp.o -c /home/sakshitha/CPPfiles/menu.cpp",
+  "file": "/home/sakshitha/CPPfiles/menu.cpp",
+  "output": "CMakeFiles/menu.dir/menu.cpp.o"
+},
+{
+  "directory": "/home/sakshitha/CPPfiles/build",
+  "command": "/usr/bin/clang++  -I/home/sakshitha/CPPfiles/. -I/usr/local/include/mongocxx/v_noabi -I/usr/local/include/bsoncxx/v_noabi -Wall -Wextra -fPIC -fopenmp  -DBOOST_LOG_DYN_LINK -g -std=gnu++17 -o CMakeFiles/BookExample.dir/main.cpp.o -c /home/sakshitha/CPPfiles/main.cpp",
+  "file": "/home/sakshitha/CPPfiles/main.cpp",
+  "output": "CMakeFiles/BookExample.dir/main.cpp.o"
+},
+{
+  "directory": "/home/sakshitha/CPPfiles/build",
+  "command": "/usr/bin/clang++  -I/home/sakshitha/CPPfiles/. -I/usr/local/include/mongocxx/v_noabi -I/usr/local/include/bsoncxx/v_noabi -Wall -Wextra -fPIC -fopenmp  -DBOOST_LOG_DYN_LINK -g -std=gnu++17 -o CMakeFiles/BookExample.dir/book.cpp.o -c /home/sakshitha/CPPfiles/book.cpp",
+  "file": "/home/sakshitha/CPPfiles/book.cpp",
+  "output": "CMakeFiles/BookExample.dir/book.cpp.o"
+},
+{
+  "directory": "/home/sakshitha/CPPfiles/build",
+  "command": "/usr/bin/clang++  -I/home/sakshitha/CPPfiles/. -I/usr/local/include/mongocxx/v_noabi -I/usr/local/include/bsoncxx/v_noabi -Wall -Wextra -fPIC -fopenmp  -DBOOST_LOG_DYN_LINK -g -std=gnu++17 -o CMakeFiles/BookExample.dir/database.cpp.o -c /home/sakshitha/CPPfiles/database.cpp",
+  "file": "/home/sakshitha/CPPfiles/database.cpp",
+  "output": "CMakeFiles/BookExample.dir/database.cpp.o"
+},
+{
+  "directory": "/home/sakshitha/CPPfiles/build",
+  "command": "/usr/bin/clang++  -I/home/sakshitha/CPPfiles/. -I/usr/local/include/mongocxx/v_noabi -I/usr/local/include/bsoncxx/v_noabi -Wall -Wextra -fPIC -fopenmp  -DBOOST_LOG_DYN_LINK -g -std=gnu++17 -o CMakeFiles/BookExample.dir/menu.cpp.o -c /home/sakshitha/CPPfiles/menu.cpp",
+  "file": "/home/sakshitha/CPPfiles/menu.cpp",
+  "output": "CMakeFiles/BookExample.dir/menu.cpp.o"
+}
+]

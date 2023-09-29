@@ -1,0 +1,2 @@
+/usr/bin/ar qc libmongo.a CMakeFiles/mongo.dir/database.cpp.o
+/usr/bin/ranlib libmongo.a
