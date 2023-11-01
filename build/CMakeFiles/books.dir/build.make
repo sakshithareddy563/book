@@ -73,15 +73,15 @@ CMakeFiles/books.dir/book.cpp.o: CMakeFiles/books.dir/flags.make
 CMakeFiles/books.dir/book.cpp.o: /home/sakshitha/CPPfiles/book.cpp
 CMakeFiles/books.dir/book.cpp.o: CMakeFiles/books.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sakshitha/CPPfiles/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/books.dir/book.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/books.dir/book.cpp.o -MF CMakeFiles/books.dir/book.cpp.o.d -o CMakeFiles/books.dir/book.cpp.o -c /home/sakshitha/CPPfiles/book.cpp
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/books.dir/book.cpp.o -MF CMakeFiles/books.dir/book.cpp.o.d -o CMakeFiles/books.dir/book.cpp.o -c /home/sakshitha/CPPfiles/book.cpp
 
 CMakeFiles/books.dir/book.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/books.dir/book.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sakshitha/CPPfiles/book.cpp > CMakeFiles/books.dir/book.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sakshitha/CPPfiles/book.cpp > CMakeFiles/books.dir/book.cpp.i
 
 CMakeFiles/books.dir/book.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/books.dir/book.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sakshitha/CPPfiles/book.cpp -o CMakeFiles/books.dir/book.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sakshitha/CPPfiles/book.cpp -o CMakeFiles/books.dir/book.cpp.s
 
 # Object files for target books
 books_OBJECTS = \

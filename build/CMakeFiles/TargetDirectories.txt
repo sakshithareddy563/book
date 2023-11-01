@@ -1,6 +1,7 @@
 /home/sakshitha/CPPfiles/build/CMakeFiles/books.dir
 /home/sakshitha/CPPfiles/build/CMakeFiles/mongo.dir
 /home/sakshitha/CPPfiles/build/CMakeFiles/menu.dir
+/home/sakshitha/CPPfiles/build/CMakeFiles/persons.dir
 /home/sakshitha/CPPfiles/build/CMakeFiles/BookExample.dir
 /home/sakshitha/CPPfiles/build/CMakeFiles/edit_cache.dir
 /home/sakshitha/CPPfiles/build/CMakeFiles/rebuild_cache.dir

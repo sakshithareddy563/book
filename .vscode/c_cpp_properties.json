@@ -12,7 +12,12 @@
                 "/usr/local/include/mongocxx/v_noabi",
                 "/usr/local/include/mongocxx/v_noabi",
                 "/usr/local/include/mongocxx/v_noabi",
-                "/usr/local/include/bsoncxx/v_noabi"
+                "/usr/local/include/bsoncxx/v_noabi",
+                "/usr/local/include/bsoncxx/v_noabi",
+                "/usr/local/include/bsoncxx/v_noabi",
+                "/usr/local/include/bsoncxx/v_noabi",
+                "/usr/local/include/bsoncxx/v_noabi",
+                "/usr/local/include/mongocxx/v_noabi"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/clang",
@@ -45,6 +50,28 @@
         },
         {
             "name": "mongocxx",
+            "includePath": [
+                "${workspaceFolder}/**"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/clang",
+            "cStandard": "c17",
+            "cppStandard": "c++14",
+            "intelliSenseMode": "linux-clang-x64"
+        },
+        {
+            "name": "bsoncxx",
+            "includePath": [
+                "${workspaceFolder}/**"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/clang",
+            "cStandard": "c17",
+            "cppStandard": "c++14",
+            "intelliSenseMode": "linux-clang-x64"
+        },
+        {
+            "name": "#include <mongocxx",
             "includePath": [
                 "${workspaceFolder}/**"
             ],

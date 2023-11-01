@@ -66,6 +66,7 @@ CMAKE_BINARY_DIR = /home/sakshitha/CPPfiles/build
 all: CMakeFiles/books.dir/all
 all: CMakeFiles/mongo.dir/all
 all: CMakeFiles/menu.dir/all
+all: CMakeFiles/persons.dir/all
 all: CMakeFiles/BookExample.dir/all
 .PHONY : all
 
@@ -77,6 +78,7 @@ preinstall:
 clean: CMakeFiles/books.dir/clean
 clean: CMakeFiles/mongo.dir/clean
 clean: CMakeFiles/menu.dir/clean
+clean: CMakeFiles/persons.dir/clean
 clean: CMakeFiles/BookExample.dir/clean
 .PHONY : clean
 
@@ -87,7 +89,7 @@ clean: CMakeFiles/BookExample.dir/clean
 CMakeFiles/books.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/books.dir/build.make CMakeFiles/books.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/books.dir/build.make CMakeFiles/books.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/sakshitha/CPPfiles/build/CMakeFiles --progress-num=6,7 "Built target books"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/sakshitha/CPPfiles/build/CMakeFiles --progress-num=3,4 "Built target books"
 .PHONY : CMakeFiles/books.dir/all
 
 # Build rule for subdir invocation for target.
@@ -113,7 +115,7 @@ CMakeFiles/books.dir/clean:
 CMakeFiles/mongo.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mongo.dir/build.make CMakeFiles/mongo.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mongo.dir/build.make CMakeFiles/mongo.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/sakshitha/CPPfiles/build/CMakeFiles --progress-num=10,11 "Built target mongo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/sakshitha/CPPfiles/build/CMakeFiles --progress-num=7,8 "Built target mongo"
 .PHONY : CMakeFiles/mongo.dir/all
 
 # Build rule for subdir invocation for target.
@@ -139,7 +141,7 @@ CMakeFiles/mongo.dir/clean:
 CMakeFiles/menu.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/menu.dir/build.make CMakeFiles/menu.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/menu.dir/build.make CMakeFiles/menu.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/sakshitha/CPPfiles/build/CMakeFiles --progress-num=8,9 "Built target menu"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/sakshitha/CPPfiles/build/CMakeFiles --progress-num=5,6 "Built target menu"
 .PHONY : CMakeFiles/menu.dir/all
 
 # Build rule for subdir invocation for target.
@@ -159,18 +161,47 @@ CMakeFiles/menu.dir/clean:
 .PHONY : CMakeFiles/menu.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/persons.dir
+
+# All Build rule for target.
+CMakeFiles/persons.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/persons.dir/build.make CMakeFiles/persons.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/persons.dir/build.make CMakeFiles/persons.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/sakshitha/CPPfiles/build/CMakeFiles --progress-num=9,10 "Built target persons"
+.PHONY : CMakeFiles/persons.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/persons.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sakshitha/CPPfiles/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/persons.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sakshitha/CPPfiles/build/CMakeFiles 0
+.PHONY : CMakeFiles/persons.dir/rule
+
+# Convenience name for target.
+persons: CMakeFiles/persons.dir/rule
+.PHONY : persons
+
+# clean rule for target.
+CMakeFiles/persons.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/persons.dir/build.make CMakeFiles/persons.dir/clean
+.PHONY : CMakeFiles/persons.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/BookExample.dir
 
 # All Build rule for target.
-CMakeFiles/BookExample.dir/all:
+CMakeFiles/BookExample.dir/all: CMakeFiles/books.dir/all
+CMakeFiles/BookExample.dir/all: CMakeFiles/mongo.dir/all
+CMakeFiles/BookExample.dir/all: CMakeFiles/menu.dir/all
+CMakeFiles/BookExample.dir/all: CMakeFiles/persons.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookExample.dir/build.make CMakeFiles/BookExample.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookExample.dir/build.make CMakeFiles/BookExample.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/sakshitha/CPPfiles/build/CMakeFiles --progress-num=1,2,3,4,5 "Built target BookExample"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/sakshitha/CPPfiles/build/CMakeFiles --progress-num=1,2 "Built target BookExample"
 .PHONY : CMakeFiles/BookExample.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/BookExample.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sakshitha/CPPfiles/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sakshitha/CPPfiles/build/CMakeFiles 10
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/BookExample.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/sakshitha/CPPfiles/build/CMakeFiles 0
 .PHONY : CMakeFiles/BookExample.dir/rule

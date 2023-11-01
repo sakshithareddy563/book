@@ -25,7 +25,7 @@
 #include <mongocxx/stdx.hpp>
 #include <mongocxx/uri.hpp>
 
-class Database;
+// class Database;
 
 namespace logging = boost::log;
 namespace src = boost::log::sources;
@@ -36,7 +36,6 @@ using namespace mongocxx;
 using bsoncxx::builder::basic::kvp;
 using bsoncxx::builder::basic::make_array;
 using bsoncxx::builder::basic::make_document;
-
 
 class book
 {
@@ -49,15 +48,15 @@ class book
         int word_count = 0;
         // boost::uuids::random_generator gen;
         // boost::uuids::uuid id = gen();
-        book();
         book(const book& temp_book );
         book(std::string n, std::string a, int p, int c, std::string dept, std::string code);
         book(book&& temp_book);
 
     public:
+         book();
         ~book();
         int get_page_count();
-        static book* createBook(const std::string& name, const std::string& author, int pages , int words, const std::string& book_dept);
+        std::shared_ptr<book> createBook(const std::string& name, const std::string& author, int pages , int words, const std::string& book_dept);
         static book* CreateDefaultBook();
         static book* CreateCopyBook(const book *temp);
         static book* CreateMoveBook(book **temp);

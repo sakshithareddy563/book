@@ -73,15 +73,15 @@ CMakeFiles/mongo.dir/database.cpp.o: CMakeFiles/mongo.dir/flags.make
 CMakeFiles/mongo.dir/database.cpp.o: /home/sakshitha/CPPfiles/database.cpp
 CMakeFiles/mongo.dir/database.cpp.o: CMakeFiles/mongo.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sakshitha/CPPfiles/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/mongo.dir/database.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mongo.dir/database.cpp.o -MF CMakeFiles/mongo.dir/database.cpp.o.d -o CMakeFiles/mongo.dir/database.cpp.o -c /home/sakshitha/CPPfiles/database.cpp
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mongo.dir/database.cpp.o -MF CMakeFiles/mongo.dir/database.cpp.o.d -o CMakeFiles/mongo.dir/database.cpp.o -c /home/sakshitha/CPPfiles/database.cpp
 
 CMakeFiles/mongo.dir/database.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mongo.dir/database.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sakshitha/CPPfiles/database.cpp > CMakeFiles/mongo.dir/database.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sakshitha/CPPfiles/database.cpp > CMakeFiles/mongo.dir/database.cpp.i
 
 CMakeFiles/mongo.dir/database.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mongo.dir/database.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sakshitha/CPPfiles/database.cpp -o CMakeFiles/mongo.dir/database.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sakshitha/CPPfiles/database.cpp -o CMakeFiles/mongo.dir/database.cpp.s
 
 # Object files for target mongo
 mongo_OBJECTS = \

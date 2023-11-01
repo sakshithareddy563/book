@@ -73,15 +73,15 @@ CMakeFiles/menu.dir/menu.cpp.o: CMakeFiles/menu.dir/flags.make
 CMakeFiles/menu.dir/menu.cpp.o: /home/sakshitha/CPPfiles/menu.cpp
 CMakeFiles/menu.dir/menu.cpp.o: CMakeFiles/menu.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sakshitha/CPPfiles/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/menu.dir/menu.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/menu.dir/menu.cpp.o -MF CMakeFiles/menu.dir/menu.cpp.o.d -o CMakeFiles/menu.dir/menu.cpp.o -c /home/sakshitha/CPPfiles/menu.cpp
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/menu.dir/menu.cpp.o -MF CMakeFiles/menu.dir/menu.cpp.o.d -o CMakeFiles/menu.dir/menu.cpp.o -c /home/sakshitha/CPPfiles/menu.cpp
 
 CMakeFiles/menu.dir/menu.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/menu.dir/menu.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sakshitha/CPPfiles/menu.cpp > CMakeFiles/menu.dir/menu.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sakshitha/CPPfiles/menu.cpp > CMakeFiles/menu.dir/menu.cpp.i
 
 CMakeFiles/menu.dir/menu.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/menu.dir/menu.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sakshitha/CPPfiles/menu.cpp -o CMakeFiles/menu.dir/menu.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sakshitha/CPPfiles/menu.cpp -o CMakeFiles/menu.dir/menu.cpp.s
 
 # Object files for target menu
 menu_OBJECTS = \

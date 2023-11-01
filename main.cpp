@@ -1,8 +1,14 @@
 #include <iostream>
+#include <fstream>
+#include <nlohmann/json.hpp>
+#include <boost/property_tree/json_parser.hpp>
+
 #include <string>
 #include <map>
 #include "book.hpp"
 #include "database.hpp"
+#include "menu.hpp"
+#include "persons.hpp"
 
 #include<boost/uuid/uuid.hpp>
 #include<boost/uuid/uuid_generators.hpp>
@@ -34,9 +40,35 @@
 // namespace src = boost::log::sources;
 // namespace sinks = boost::log::sinks;
 // namespace keywords = boost::log::keywords;
+using json = nlohmann::json;
 
 int main(int, char*[])
 {
+    
+    // std::ifstream config_file("config.json");
+    // json data = json::parse(config_file);
+
+    // if(!config_file.is_open())
+    // {
+    //     std::cout<<"failed to open"<<std::endl;
+    //     return 1;
+    // }
+
+    // // nlohmann::json config;
+    // config_file >> data;
+    
+
+    // std::string database = config["database"];
+    // std::string collection = config["collection"];
+    // int port = config["port"];
+
+    // std::cout << "database" << database << std::endl;
+    // std::cout << "collection" << collection << std::endl;
+    // std::cout << "port" << port << std::endl;
+
+    // config_file.close();
+
+
     // void init();
     // logging::add_common_attributes();
 
@@ -48,9 +80,10 @@ int main(int, char*[])
     // BOOST_LOG_TRIVIAL(fatal) << "A fatal severity message";
 
 
-    book* b1 = book::createBook("maths", "john",10,100,"dep1");
+    // book* b1 = book::createBook("maths", "john",10,100,"dep1");
+    // book obj;
+    // std::shared_ptr<book> ptr = obj.createBook("maths", "john",10,100,"dep1");
 
-    
     
     // book* b4 = book::createBook("english", "mark", 20, 200, "dep2");
     // b1->fetch_details();
@@ -60,8 +93,7 @@ int main(int, char*[])
     // b3->fetch_details();
     // b3->delete_book();
     // b3->edit_book("chem", "c", 10, 100,"dep3");
-    
-    // Database d;
+    login();
      
     
 }

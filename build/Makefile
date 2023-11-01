@@ -156,6 +156,19 @@ menu/fast:
 .PHONY : menu/fast
 
 #=============================================================================
+# Target rules for targets named persons
+
+# Build rule for target.
+persons: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 persons
+.PHONY : persons
+
+# fast build rule for target.
+persons/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/persons.dir/build.make CMakeFiles/persons.dir/build
+.PHONY : persons/fast
+
+#=============================================================================
 # Target rules for targets named BookExample
 
 # Build rule for target.
@@ -174,7 +187,6 @@ book.o: book.cpp.o
 # target to build an object file
 book.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/books.dir/build.make CMakeFiles/books.dir/book.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookExample.dir/build.make CMakeFiles/BookExample.dir/book.cpp.o
 .PHONY : book.cpp.o
 
 book.i: book.cpp.i
@@ -183,7 +195,6 @@ book.i: book.cpp.i
 # target to preprocess a source file
 book.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/books.dir/build.make CMakeFiles/books.dir/book.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookExample.dir/build.make CMakeFiles/BookExample.dir/book.cpp.i
 .PHONY : book.cpp.i
 
 book.s: book.cpp.s
@@ -192,7 +203,6 @@ book.s: book.cpp.s
 # target to generate assembly for a file
 book.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/books.dir/build.make CMakeFiles/books.dir/book.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookExample.dir/build.make CMakeFiles/BookExample.dir/book.cpp.s
 .PHONY : book.cpp.s
 
 database.o: database.cpp.o
@@ -201,7 +211,6 @@ database.o: database.cpp.o
 # target to build an object file
 database.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mongo.dir/build.make CMakeFiles/mongo.dir/database.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookExample.dir/build.make CMakeFiles/BookExample.dir/database.cpp.o
 .PHONY : database.cpp.o
 
 database.i: database.cpp.i
@@ -210,7 +219,6 @@ database.i: database.cpp.i
 # target to preprocess a source file
 database.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mongo.dir/build.make CMakeFiles/mongo.dir/database.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookExample.dir/build.make CMakeFiles/BookExample.dir/database.cpp.i
 .PHONY : database.cpp.i
 
 database.s: database.cpp.s
@@ -219,7 +227,6 @@ database.s: database.cpp.s
 # target to generate assembly for a file
 database.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mongo.dir/build.make CMakeFiles/mongo.dir/database.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookExample.dir/build.make CMakeFiles/BookExample.dir/database.cpp.s
 .PHONY : database.cpp.s
 
 main.o: main.cpp.o
@@ -252,7 +259,6 @@ menu.o: menu.cpp.o
 # target to build an object file
 menu.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/menu.dir/build.make CMakeFiles/menu.dir/menu.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookExample.dir/build.make CMakeFiles/BookExample.dir/menu.cpp.o
 .PHONY : menu.cpp.o
 
 menu.i: menu.cpp.i
@@ -261,7 +267,6 @@ menu.i: menu.cpp.i
 # target to preprocess a source file
 menu.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/menu.dir/build.make CMakeFiles/menu.dir/menu.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookExample.dir/build.make CMakeFiles/BookExample.dir/menu.cpp.i
 .PHONY : menu.cpp.i
 
 menu.s: menu.cpp.s
@@ -270,8 +275,31 @@ menu.s: menu.cpp.s
 # target to generate assembly for a file
 menu.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/menu.dir/build.make CMakeFiles/menu.dir/menu.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookExample.dir/build.make CMakeFiles/BookExample.dir/menu.cpp.s
 .PHONY : menu.cpp.s
+
+persons.o: persons.cpp.o
+.PHONY : persons.o
+
+# target to build an object file
+persons.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/persons.dir/build.make CMakeFiles/persons.dir/persons.cpp.o
+.PHONY : persons.cpp.o
+
+persons.i: persons.cpp.i
+.PHONY : persons.i
+
+# target to preprocess a source file
+persons.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/persons.dir/build.make CMakeFiles/persons.dir/persons.cpp.i
+.PHONY : persons.cpp.i
+
+persons.s: persons.cpp.s
+.PHONY : persons.s
+
+# target to generate assembly for a file
+persons.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/persons.dir/build.make CMakeFiles/persons.dir/persons.cpp.s
+.PHONY : persons.cpp.s
 
 # Help Target
 help:
@@ -285,6 +313,7 @@ help:
 	@echo "... books"
 	@echo "... menu"
 	@echo "... mongo"
+	@echo "... persons"
 	@echo "... book.o"
 	@echo "... book.i"
 	@echo "... book.s"
@@ -297,6 +326,9 @@ help:
 	@echo "... menu.o"
 	@echo "... menu.i"
 	@echo "... menu.s"
+	@echo "... persons.o"
+	@echo "... persons.i"
+	@echo "... persons.s"
 .PHONY : help
 
 

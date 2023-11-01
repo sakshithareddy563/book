@@ -1,23 +1,22 @@
-
 #include "book.hpp"
 #include "database.hpp"
 
 
-// void init()
-// {
-//     logging::add_file_log
-//     (
-//         keywords::file_name = "sample_%N.log",                                        /*< file name pattern >*/
-//         keywords::rotation_size = 10 * 1024 * 1024,                                   /*< rotate files every 10 MiB... >*/
-//         keywords::time_based_rotation = sinks::file::rotation_at_time_point(0, 0, 0), /*< ...or at midnight >*/
-//         keywords::format = "[%TimeStamp%]: %Message%"                                 /*< log record format >*/
-//     );
+void init()
+{
+    logging::add_file_log
+    (
+        keywords::file_name = "log_file.log",                                        
+        keywords::rotation_size = 10 * 1024 * 1024,                                   
+        keywords::time_based_rotation = sinks::file::rotation_at_time_point(0, 0, 0), 
+        keywords::format = "[%TimeStamp%]: %Message%"                                
+    );
 
-//     logging::core::get()->set_filter
-//     (
-//         logging::trivial::severity >= logging::trivial::info
-//     );
-// }
+    logging::core::get()->set_filter
+    (
+        logging::trivial::severity >= logging::trivial::info
+    );
+}
 
 
 book::book()
@@ -61,8 +60,8 @@ std::string book:: get_dept()
 }
 
 book::book(std::string n, std::string a, int p, int c, std::string dept, std::string code)
-{ 
-    std::cout<<"param constr called"<<std::endl;
+{
+    BOOST_LOG_TRIVIAL(info) << "param constr called"; 
     this->name=n;
     this->author=a;
     this->page_count=p;
@@ -77,22 +76,23 @@ book::book(std::string n, std::string a, int p, int c, std::string dept, std::st
 
 book::book(book&& temp_book)
 {
-    std::cout<<"move contructor called"<<std::endl;
+    BOOST_LOG_TRIVIAL(info) << "copy constr called"; 
     this->name=temp_book.name;
     this->author=temp_book.author;
     this->page_count=temp_book.page_count;
     this->word_count=temp_book.word_count;
 }
 
-book* book::createBook(const std::string& name, const std::string& author, int pages , int words, const std::string& book_dept)
+std::shared_ptr<book> book::createBook(const std::string& name, const std::string& author, int pages , int words, const std::string& book_dept)
 {
     boost::uuids::random_generator gen;
     boost::uuids::uuid id = gen();
     std::string code = boost::uuids::to_string(id);
-    book* ptr = new book(name,author,pages,words, book_dept, code);
+    std::unique_ptr<book> ptr(new book(name,author,pages,words, book_dept, code));
+    // book* ptr = new book(name,author,pages,words, book_dept, code);
 
     // Database db;
-    insert_book_data(ptr,"library","books");
+    insert_book_data(ptr.get(),"library","books");
     // delete ptr;
     return ptr;
 }
@@ -153,11 +153,12 @@ void book::replace_book(book& temp_book)
 
 void book::fetch_details() const
 {
-    std::cout<<"Displaying the Book"<<std::endl
-    <<"\tName: "<<name<<std::endl
-    <<"\tAuthor Name: "<<author<<std::endl
-    <<"\tHas "<<page_count<<" pages"<<std::endl
-    <<"\tHas "<<word_count<<" words"<<std::endl;
+    BOOST_LOG_TRIVIAL(info) << "Displaying the Book"; 
+    BOOST_LOG_TRIVIAL(info) << "name"; 
+    BOOST_LOG_TRIVIAL(info) << "Author name"; 
+    BOOST_LOG_TRIVIAL(info) << "pages"; 
+    BOOST_LOG_TRIVIAL(info) << "words"; 
+    
 }
 
 void book::rename(std::string new_name)
