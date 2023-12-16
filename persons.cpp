@@ -76,8 +76,7 @@ void student()
 void read()
 {
     std::string database, collection;
-    mongocxx::database db = conn[database];
-    mongocxx::collection book_coll= db[collection];
+   
     // search_book(database, collection);
 
 }
@@ -86,8 +85,6 @@ void issue_book()
 {
     std::string database; 
     std::string collection;
-    mongocxx::database db = conn[database];
-    mongocxx::collection book_coll= db[collection];
     // std::map<std::string,std::string> isuue_book_details = 
 }
 

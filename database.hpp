@@ -12,6 +12,7 @@
 #include <bsoncxx/builder/stream/document.hpp>
 #include <bsoncxx/builder/stream/array.hpp>
 #include <map>
+#include <fstream>
 
 
 // class Database

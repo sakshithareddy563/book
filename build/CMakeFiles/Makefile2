@@ -191,9 +191,9 @@ CMakeFiles/persons.dir/clean:
 
 # All Build rule for target.
 CMakeFiles/BookExample.dir/all: CMakeFiles/books.dir/all
+CMakeFiles/BookExample.dir/all: CMakeFiles/persons.dir/all
 CMakeFiles/BookExample.dir/all: CMakeFiles/mongo.dir/all
 CMakeFiles/BookExample.dir/all: CMakeFiles/menu.dir/all
-CMakeFiles/BookExample.dir/all: CMakeFiles/persons.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookExample.dir/build.make CMakeFiles/BookExample.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookExample.dir/build.make CMakeFiles/BookExample.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/sakshitha/CPPfiles/build/CMakeFiles --progress-num=1,2 "Built target BookExample"

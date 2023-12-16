@@ -1,3 +1,0 @@
-/home/sakshitha/CPPfiles/trashfiles/build/CMakeFiles/trash.dir
-/home/sakshitha/CPPfiles/trashfiles/build/CMakeFiles/edit_cache.dir
-/home/sakshitha/CPPfiles/trashfiles/build/CMakeFiles/rebuild_cache.dir
